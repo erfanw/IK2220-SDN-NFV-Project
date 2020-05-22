@@ -1,0 +1,88 @@
+IK2220-assign-phase2-team4 Test Report
+
+Results for ICMP tests:
+ICMP test form PbZ to lb:
+Response received. This is correct.
+ICMP test form PbZ to lb:
+Response received. This is correct.
+ICMP test form PrZ to lb:
+Response received. This is correct.
+ICMP test form PrZ to lb:
+Response received. This is correct.
+ICMP test from PbZ to PbZ:
+Response received. This is correct.
+ICMP test from PbZ to PrZ:
+Response not received. This is correct.
+ICMP test from PbZ to Web Server:
+Response not received. This is correct.
+ICMP test from PrZ to PrZ:
+Response received. This is correct.
+ICMP test from PrZ to PbZ:
+Response received. This is correct.
+ICMP test from PrZ to Web Server:
+Response not received. This is correct.
+
+ICMP test success rate is 100.00%
+
+
+
+Results for TCP tests:
+Rule: hosts in PbZ cannot initiate TCP connection to any hosts in PrZ. Hosts in PrZ can initiate TCP connection to hosts in PbZ with any dstport. Hosts in both PbZ and PrZ can only initiate TCP connections to lb with dstport 80 and web servers will respond in a round robin way.
+
+TCP connnection test from PbZ to DMZ, port 80
+Connection succeeded. This is correct.
+TCP connnection test from PbZ to DMZ, port 80
+Connection succeeded. This is correct.
+TCP connnection test from PbZ to DMZ, port 80
+Connection succeeded. This is correct.
+TCP connnection test from PrZ to DMZ, port 80
+Connection succeeded. This is correct.
+TCP connnection test from PrZ to DMZ, port 80
+Connection timed out. This is correct.
+TCP connnection test from PrZ to DMZ, port 80
+Connection succeeded. This is correct.
+TCP connnection test from PbZ to DMZ, port 80
+Connection succeeded. This is correct.
+TCP connnection test from PbZ to DMZ, port 80
+Connection succeeded. This is correct.
+TCP connnection test from PbZ to DMZ, port 80
+Connection timed out. This is correct.
+TCP connnection test from PbZ to DMZ, port 122
+Connection timed out. This is correct.
+TCP connnection test from PrZ to DMZ, port 84
+Connection timed out. This is correct.
+TCP connnection test from PbZ to PrZ, port 81
+Connection timed out. This is correct.
+TCP connnection test from PbZ to PrZ, port 80
+Connection timed out. This is correct.
+TCP connnection test from PbZ to PrZ, port 1942
+Connection timed out. This is correct.
+TCP connnection test from PrZ to PbZ, port 1453
+Connection succeeded. This is correct
+TCP connnection test from PrZ to PbZ, port 80
+Connection succeeded. This is correct
+TCP connnection test from PrZ to PbZ, port 514
+Connection succeeded. This is correct
+
+Tcp test success rate is 100.00%
+
+
+Result for HTTP tests:
+HTTP POST request sent to servers. This is correct.
+HTTP GET request sent to inspector. This is correct.
+HTTP TRACE request sent to inspector. This is correct.
+HTTP DELETE request sent to inspector. This is correct.
+HTTP HEAD request sent to inspector. This is correct.
+HTTP CONNECT request sent to inspector. This is correct.
+HTTP OPTIONS request sent to inspector. This is correct.
+HTTP PUT --data "cat /etc/passwd" request sent to inspector. This is correct.
+HTTP PUT --data "INSERT" request sent to inspector. This is correct.
+HTTP PUT --data "cat /var/log" request sent to inspector. This is correct.
+HTTP PUT --data "UPDATE" request sent to inspector. This is correct.
+HTTP PUT --data "DELETE" request sent to inspector. This is correct.
+
+HTTP test success rate is 100.00%
+
+Total success rate is 100.00%
+
+Test completed!
